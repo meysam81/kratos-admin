@@ -1,0 +1,14 @@
+# kratos-server-config.yml
+dsn: memory
+
+courier:
+  smtp:
+    connection_uri: smtps://test:test@mailslurper:1025/?skip_ssl_verify=true
+
+identity:
+  schemas:
+    - id: default
+      url: https://github.com/ory/kratos/raw/refs/tags/v1.3.1/contrib/quickstart/kratos/email-password/identity.schema.json
+
+selfservice:
+  default_browser_return_url: http://localhost:8080
